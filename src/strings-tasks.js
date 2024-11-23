@@ -102,7 +102,7 @@ function removeLeadingAndTrailingWhitespaces(value) {
  *   removeLeadingWhitespaces('\t\t\tHello, World! ') => 'Hello, World! '
  */
 function removeLeadingWhitespaces(value) {
-  return value.replace(/^\s+/, '');
+  return value.trimStart();
 }
 
 /**
@@ -117,7 +117,7 @@ function removeLeadingWhitespaces(value) {
  *   removeTrailingWhitespaces('\t\t\tHello, World! ') => '\t\t\tHello, World!'
  */
 function removeTrailingWhitespaces(value) {
-  return value.replace(/\s+$/, '');
+  return value.trimEnd();
 }
 
 /**
